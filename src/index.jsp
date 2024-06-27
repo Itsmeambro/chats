@@ -15,6 +15,26 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js" integrity="sha512-iKDtgDyTHjAitUDdLljGhenhPwrbBfqTKWO1mkhSFH3A7blITC9MhYon6SjnMhp4o0rADGw9yAC6EW4t5a4K3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-  <app-root></app-root>
+  
+  <div class="tracker-container">
+    <div class="create-form">
+      <form action="" method="get">
+        <div class="subject">
+          <label for="subject"></label>
+          <input type="text">
+        </div>
+        <div class="date">
+
+        </div>
+        <div class="desc"></div>
+        <div class="ref"></div>
+        <div class="expense-type"></div>
+      </form>
+    </div>
+    <div class="show-tickets">
+
+    </div>
+  </div>
+
 </body>
 </html>

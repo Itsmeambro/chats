@@ -1,0 +1,29 @@
+
+
+<div class="login-page">
+    <div class="page-wrapper">
+        <div class="login-form">
+            <div class="form-elements" id = "title">
+                <label for="title">Chats</label>
+            </div>
+            <div class="form-elements" id="form-fields-container">
+                <div class="form-fields" id="username">
+                    <label for="username" >Username</label>
+                    <input type="text" [(ngModel)]="loginData.username" name="loginUsername" >
+                </div>
+                <div class="form-fields" id="password" >
+                    <label for="password">Password</label>
+                    <input type="password" [(ngModel)]="loginData.password" name="loginPassword" >
+                </div>
+                <div class="login-btn">
+                    <button type="button" id="login-btn" (click)="tryLogin()">Login</button>
+                </div>
+            </div>
+            <div class="form-elements" id="form-footer">
+                <label for="sign-up"></label>
+                <label for="forget-password" id="forget-password">Forgot your password</label>
+            </div>
+        </div>
+    </div>
+</div>
+
