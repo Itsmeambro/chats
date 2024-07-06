@@ -1,0 +1,79 @@
+<div class="chats-view">
+    <div class="sidebar">
+        <div class="header">
+            <div class="avatar">
+                <img src="./../../../assets/img/avatar.webp" alt="" srcset="">
+            </div>
+            <div class="chat-header-right">
+                <img src="./../../../assets/img/svg/circle.svg" alt="" srcset="">
+                <img src="./../../../assets/img/svg/chat.svg" alt="" srcset="">
+                <img src="./../../../assets/img/svg/more.svg" alt="" srcset="">
+            </div>
+        </div>
+        <div class="sidebar-search">
+            <div class="sidebar-search-container">
+                <img src="./../../../assets/img/svg/search.svg" alt="">
+                <input type="text" name="" id="" placeholder="Search or start new chat">
+            </div>
+        </div>
+        <div class="sidebar-chats">
+            <div class="sidebar-chat" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12,13]">
+                <div class="chat-avatar">
+                    <img src="./../../../assets/img/avatar.webp" alt="" srcset="">
+                </div>
+                <div class="chat-info">
+                    <h4>Mike</h4>
+                    <p>Last message</p>
+                </div>
+                <div class="time">
+                    <p>2:44 am</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- message-container -->
+
+    <div class="message-container">
+        <div class="header">
+            <div class="chat-title">
+                <div class="avatar">
+                    <img src="./../../../assets/img/avatar.webp" alt="" srcset="">
+                </div>
+                <div class="message-header-content">
+                    <h4>Alan</h4>
+                    <p>Online</p>
+                </div>
+            </div>
+            <div class="chat-header-right">
+                <img src="./../../../assets/img/svg/search.svg" alt="" srcset="">
+                <img src="./../../../assets/img/svg/more.svg" alt="" srcset="">
+            </div>
+        </div>
+        <div class="message-content">
+            <p class="chat-message">
+                This is the message <span class="chat-timestamp">11:33 pm</span>
+            </p>
+            <p class="chat-message">
+                This is the message <span class="chat-timestamp">11:33 pm</span>
+            </p>
+            <p class="chat-message chat-sent">
+                This is the message <span class="chat-timestamp">11:33 pm</span>
+            </p>
+            <p class="chat-message">
+                This is the message <span class="chat-timestamp">11:33 pm</span>
+            </p>
+            <p class="chat-message">
+                This is the message <span class="chat-timestamp">11:33 pm</span>
+            </p>
+        </div>
+        <div class="message-footer">
+            <img src="./../../../assets/img/svg/emoji.svg" alt="">
+            <img src="./../../../assets/img/svg/paperclip.svg" alt="">
+            <input type="text">
+            <img src="./../../../assets/img/svg/mic.svg" alt="">
+
+        </div>
+    </div>
+</div>

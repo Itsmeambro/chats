@@ -13,4 +13,8 @@ export class HttpService {
     return this.http.post<T>(url,params);
   }
 
+  public signUp<T>(url: string,params: any):Observable<T>{
+    return this.http.post<T>(url,params);
+  }
+
 }

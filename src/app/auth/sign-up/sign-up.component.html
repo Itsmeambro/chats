@@ -1,0 +1,54 @@
+
+
+<div class="login-page">
+    <div class="page-wrapper">
+        <div class="login-form">
+            <div class="form-elements" id = "title">
+                <label for="title">Chats</label>
+            </div>
+            <div class="form-elements" id="form-fields-container">
+                <!-- <div class="form-fields" id="username">
+                    <label for="username" >Username</label>
+                    <input type="text" [(ngModel)]="loginData.username" name="loginUsername" >
+                </div> -->
+                <div class="form-fields" id="fullname" >
+                    <label for="fullname">Fullname</label>
+                    <input type="fullname" [(ngModel)]="userData.fullname" name="signFullname" id="signFullname">
+                </div>
+                <div class="form-fields" id="username">
+                    <label for="username" >Username</label>
+                    <input type="text" [(ngModel)]="userData.username" name="signUsername" id="signUsername" >
+                </div>
+                <div class="form-fields" id="email">
+                    <label for="email" >email</label>
+                    <input type="text" [(ngModel)]="userData.email" name="loginEmail" id="signEmail">
+                </div>
+                <div class="form-fields" id="phone">
+                    <label for="phone" >phone</label>
+                    <input type="text" [(ngModel)]="userData.phone" name="loginPhone" id="signPhone" >
+                </div>
+                <div class="form-fields" id="dob">
+                    <label for="dob" >Date of birth</label>
+                    <input type="date" [(ngModel)]="userData.dob" name="loginDob" id="signDob">
+                </div>
+                <div class="form-fields" id="password" >
+                    <label for="password">Password</label>
+                    <input type="password" [(ngModel)]="userData.password" name="loginPassword" id="signPassword">
+                </div>
+                <!-- <div class="form-fields" id="password" >
+                    <label for="password">Password</label>
+                    <input type="password" [(ngModel)]="userData.againPassword" name="loginAgainPassword" >
+                </div> -->
+                <div class="login-btn">
+                    <button type="button" id="login-btn" (click)="checkFields()">Sign up</button>
+                </div>
+                
+            </div>
+            <div class="form-elements" id="form-footer">
+                <label for="sign-up">Already have an account? </label>
+                <label for="sign-up" id="sign-up-link">  <button routerLink="/login" >Login</button></label>
+            </div>
+        </div>
+    </div>
+</div>
+

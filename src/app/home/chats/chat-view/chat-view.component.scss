@@ -1,0 +1,52 @@
+.chatViewContainer { 
+
+    width: calc(100vw - 410px);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fff;
+    align-items: center;
+
+	.chatViewWrapper { 
+
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        
+		.chatViewHeader { 
+            background-color: #d7d7d7;
+			
+            width: 100%;
+            flex: 1;
+
+			p { 
+
+			}
+		}
+
+		.messagesView { 
+            flex: 10;
+			width: 100%;
+			.messages {
+				
+				
+
+				.chat-message { 
+
+					.chat-timestamp { 
+
+					}
+				}
+			}
+		}
+
+		.inputArea { 
+            flex: .8;
+			input { 
+
+			}
+		}
+	}
+}

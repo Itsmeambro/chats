@@ -6,13 +6,27 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class ToastService {
 
-  status : BehaviorSubject<any> = new BehaviorSubject<any>(null);
+  timer: any;
+
+  status: BehaviorSubject<any> = new BehaviorSubject<any>(null);
 
   constructor() { }
 
-  showToast(type: string,msg: string) {
-    localStorage.setItem("toastType",type)
-    this.status.next(msg); 
+  showToast(type: string, msg: string, autoClose?: any) {
+    localStorage.setItem("toastType", type)
+    this.status.next(msg);
+
+    if (this.timer) {
+      clearTimeout(this.timer)
+    }
+
+    if (autoClose) {
+      this.timer = window.setTimeout(() => {
+        this.status.next(null);
+
+      }, 4000);
+    }
+
   }
 
 }

@@ -4,6 +4,7 @@ import { LoginRequest } from 'src/app/shared/model/login-request';
 import { AuthService } from 'src/app/shared/service/auth.service';
 import { ToastService } from 'src/app/shared/service/toast.service';
 
+declare var $ : any;
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -19,8 +20,8 @@ export class LoginComponent implements OnInit {
   constructor(private authService: AuthService, private router: Router, private toastr: ToastService) { }
 
   ngOnInit(): void {
-    this.loginData.username = 'john'
-    this.loginData.password = '123'
+    this.loginData.username = 'alan'
+    this.loginData.password = '12345'
   }
   
   tryLogin() {
@@ -58,8 +59,8 @@ export class LoginComponent implements OnInit {
         this.toastr.showToast("success","Login successful!")
         console.log('Login successful!', response);
         localStorage.setItem('chats-token', response.token);
-        // this.router.navigate(['/dashboard']);
-
+        this.router.navigate(['/home/chats']);
+        console.log('Login successful!', response);
       },
       error => {
         this.toastr.showToast("error","Login failed")
