@@ -1,52 +1,123 @@
-.chatViewContainer { 
+.chatViewContainer {
+  width: calc(100vw - 410px);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fff;
+  align-items: center;
 
-    width: calc(100vw - 410px);
+  .chatViewWrapper {
+    height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    height: 100vh;
-    background-color: #fff;
-    align-items: center;
+    flex-direction: column;
 
-	.chatViewWrapper { 
+    .chatViewHeader {
+      background-color: #d7d7d739;
 
-        height: 100%;
-        width: 100%;
+      width: 100%;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .chatViewHeaderWrapper {
+        width: 95%;
         display: flex;
-        flex-direction: column;
-        
-        
-		.chatViewHeader { 
-            background-color: #d7d7d7;
-			
-            width: 100%;
-            flex: 1;
+        justify-content: space-between;
+        align-items: center;
+        .receipientNameStatus {
+          display: flex;
 
-			p { 
+          .chat-avatar {
+            img {
+              width: 30px;
+            }
+          }
+        }
+        .otherInfo {
+          .searchChat {
+            svg {
+              width: 25px;
+            }
+          }
+        }
+      }
+    }
 
-			}
-		}
+    .messagesView {
+      flex: 10;
+      width: 100%;
+      .messages {
+        .chat-message {
+          .chat-timestamp {
+          }
+        }
+      }
+    }
 
-		.messagesView { 
-            flex: 10;
-			width: 100%;
-			.messages {
-				
-				
+    .inputArea {
+      flex: 0.9;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      // background-color: rgba(165, 42, 42, 0.305);
+      background-color: #d7d7d739;
 
-				.chat-message { 
+      .inputAreWrapper {
+        height: 100%;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+        // background-color: #d7d7d739;
 
-					.chat-timestamp { 
+        .pin, .mic {
+          // flex: 0.5;
+          // background-color: brown;
+          padding: 2px 4px;
+		  
 
-					}
-				}
-			}
-		}
+          svg {
+            width: 25px;
+          }
 
-		.inputArea { 
-            flex: .8;
-			input { 
+		  &:hover {
+			background-color: #8585851f;
+			border-radius: 5px;
 
-			}
-		}
-	}
+
+
+		  }
+        }
+        .inputBox {
+          flex: 10;
+          input {
+            height: 100%;
+            width: 90%;
+            padding: 8px 13px;
+            background-color: transparent;
+            border: none;
+
+            &:focus {
+              
+			  background-color: #8585851f;
+			  outline: none;
+			border-radius: 5px;
+
+            }
+          }
+        }
+        // .mic {
+        //   // flex: 0.5;
+        //   svg {
+        //     width: 25px;
+        //   }
+        //   // background-color: brown;
+        //   padding: 3px 5px;
+        // }
+      }
+    }
+  }
 }
